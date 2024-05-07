@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view_comment_tab"
+    android:layout_width="match_parent"
+    android:layout_height="173dp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:cardCornerRadius="8dp"
+    android:elevation="10dp"
+    android:layout_marginTop="10dp"
+    android:padding="5dp">
+
+        <LinearLayout
+            android:layout_marginStart="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/text_view_comment_heading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="How do I solve logical reasoning questions ?"
+                android:textStyle="bold"
+                android:textSize="19sp"
+
+                />
+
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_height="2dp"/>
+
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/image_view_comment_profile_pic"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/dipak_image"
+                    app:civ_border_width="2dp"/>
+
+
+                <LinearLayout
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:orientation="vertical"
+                    android:layout_marginStart="15dp">
+
+                    <TextView
+                        android:id="@+id/text_view_comment_profile_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="Dipak Kumar"
+                        android:textSize="15sp"/>
+
+                    <TextView
+                        android:id="@+id/text_view_comment_time_and_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="4:20 pm  | 22 March 2023"
+                        android:textSize="15sp"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_height="2dp"/>
+
+            <TextView
+                android:id="@+id/text_view_comment_message"
+                android:layout_marginBottom="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:padding="3dp"
+                tools:text="I just wanted to share a bit of my journey with managing anxiety. Lately, I've been feeling overwhelmed with work and personal stressors, and it's been tough to stay grounded. But I've found that practicing mindfulness techniques, like deep breathing and meditation, has really helped me regain a sense of calm.
+
+            I know it's not easy to deal with these feelings, but please remember that you're not alone. Whether it's anxiety, depression, or any other mental health challenge, there's a community here to support you. We all have our ups and downs, but together, we can navigate through them.
+
+            If anyone needs someone to talk to or wants to share their own coping strategies, feel free to reach out. Let's continue to lift each other up and prioritize our mental well-being.
+
+            Take care, everyone."/>
+
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
