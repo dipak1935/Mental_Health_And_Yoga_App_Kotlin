@@ -1,5 +1,6 @@
 package com.example.mentalhealthapp.home
 
+import android.app.ActionBar
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -23,5 +24,11 @@ class HomeFragment:Fragment() {
         return binding.root
 
 
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        ActionBar.DISPLAY_SHOW_TITLE
     }
 }

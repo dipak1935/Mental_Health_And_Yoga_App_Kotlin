@@ -2,4 +2,8 @@
     <string name="app_name">Mental Health App</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="welcome_message">Good day , Adarsh !</string>
+    <string name="button_like">LIKE</string>
+    <string name="button_comment">COMMENT</string>
+    <string name="button_share">SHARE</string>
 </resources>
