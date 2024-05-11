@@ -21,7 +21,10 @@ class HomeFragment:Fragment() {
 
         binding=FragmentHomeBinding.inflate(inflater,container,false)
 
+        ActionBar.DISPLAY_SHOW_TITLE
+
         return binding.root
+
 
 
     }
@@ -29,6 +32,6 @@ class HomeFragment:Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        ActionBar.DISPLAY_SHOW_TITLE
+
     }
 }

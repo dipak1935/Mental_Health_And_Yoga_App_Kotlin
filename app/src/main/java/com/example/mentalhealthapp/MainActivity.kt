@@ -2,16 +2,12 @@ package com.example.mentalhealthapp
 
 import android.os.Bundle
 import android.view.MenuItem
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import androidx.fragment.app.commit
-import androidx.fragment.app.replace
 import com.example.mentalhealthapp.community.CommunityForumFragment
 import com.example.mentalhealthapp.databinding.ActivityMainBinding
 import com.example.mentalhealthapp.home.HomeFragment
-import com.example.mentalhealthapp.moodtracker.MoodTrackerFragment
+import com.example.mentalhealthapp.therapy.TherapyFragment
 import com.example.mentalhealthapp.yoga.YogaFragment
 import com.google.android.material.navigation.NavigationBarView
 
@@ -54,9 +50,9 @@ class MainActivity : AppCompatActivity(), NavigationBarView.OnItemSelectedListen
 
             return true
         }
-        else if(item.itemId== R.id.nav_mood){
+        else if(item.itemId== R.id.nav_therapy){
             supportFragmentManager.commit {
-                replace(R.id.frame_content,MoodTrackerFragment())
+                replace(R.id.frame_content, TherapyFragment())
             }
             return true
         }
