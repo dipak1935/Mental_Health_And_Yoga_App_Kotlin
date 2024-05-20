@@ -42,7 +42,7 @@ class CommunityForumFragment : Fragment() {
 
         binding.recyclerView.adapter=myAdapter
 
-        myAdapter.setOnItemClickListener(object : CommunityForumCommentAdapter.onItemClickListener{
+        myAdapter.setOnItemClickListener(object : CommunityForumCommentAdapter.OnItemClickListener{
             override fun onItemClick(position: Int) {
 
                 val intent=Intent(context,CommentDetailActivity::class.java)

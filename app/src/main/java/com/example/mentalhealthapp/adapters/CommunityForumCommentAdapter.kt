@@ -11,13 +11,13 @@ import de.hdodenhof.circleimageview.CircleImageView
 
 class CommunityForumCommentAdapter(private var commentArrayList:ArrayList<Comment>) : RecyclerView.Adapter<CommunityForumCommentAdapter.MyViewHolder>() {
 
-    private lateinit var mListener:onItemClickListener
-    interface onItemClickListener{
+    private lateinit var mListener:OnItemClickListener
+    interface OnItemClickListener{
 
         fun onItemClick(position: Int)
     }
 
-    fun setOnItemClickListener(listener:onItemClickListener){
+    fun setOnItemClickListener(listener:OnItemClickListener){
         mListener=listener
     }
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
@@ -46,7 +46,7 @@ class CommunityForumCommentAdapter(private var commentArrayList:ArrayList<Commen
 
 
 
-    class MyViewHolder(itemView: View,listener:onItemClickListener) : RecyclerView.ViewHolder(itemView) {
+    class MyViewHolder(itemView: View,listener:OnItemClickListener) : RecyclerView.ViewHolder(itemView) {
 
         val commentHeading: TextView =itemView.findViewById(R.id.text_view_comment_heading)
         val commentImage:CircleImageView=itemView.findViewById(R.id.image_view_comment_profile_pic)

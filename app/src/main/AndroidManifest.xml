@@ -13,10 +13,13 @@
         android:theme="@style/Theme.MentalHealthApp"
         tools:targetApi="31">
         <activity
+            android:name=".login.SignUpActivity"
+            android:exported="false" />
+        <activity
             android:name=".community.CommentDetailActivity"
             android:exported="false" />
         <activity
-            android:name=".LoginActivity"
+            android:name=".login.SignInActivity"
             android:exported="false" />
         <activity
             android:name=".SplashActivity"

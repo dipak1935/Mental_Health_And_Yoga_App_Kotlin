@@ -6,4 +6,12 @@
     <string name="button_like">LIKE</string>
     <string name="button_comment">COMMENT</string>
     <string name="button_share">SHARE</string>
+    <string name="text_sign_in">Sign In to Swastika</string>
+    <string name="hint_enter_you_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="text_create_account">Don\'t have an account ?</string>
+    <string name="hint_sign_up">Sign Up</string>
+    <string name="hint_sign_in">Sign In</string>
+    <string name="text_sign_up">Sign Up to Swastika</string>
+    <string name="hint_name">Name</string>
 </resources>
