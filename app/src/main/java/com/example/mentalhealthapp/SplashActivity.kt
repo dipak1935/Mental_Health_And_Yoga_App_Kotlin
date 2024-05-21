@@ -6,6 +6,7 @@ import android.os.Handler
 import android.os.Looper
 import androidx.appcompat.app.AppCompatActivity
 import com.example.mentalhealthapp.login.SignInActivity
+import com.example.mentalhealthapp.login.SignInWelcomeActivity
 
 class SplashActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -16,7 +17,7 @@ class SplashActivity : AppCompatActivity() {
 
         Handler(Looper.getMainLooper()).postDelayed({
 
-            startActivity(Intent(this, SignInActivity::class.java))
+            startActivity(Intent(this, SignInWelcomeActivity::class.java))
             finish()
         },6000)
 

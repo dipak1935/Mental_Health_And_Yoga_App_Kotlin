@@ -14,4 +14,5 @@
     <string name="hint_sign_in">Sign In</string>
     <string name="text_sign_up">Sign Up to Swastika</string>
     <string name="hint_name">Name</string>
+    <string name="hint_mobile_number">Mobile Number</string>
 </resources>
