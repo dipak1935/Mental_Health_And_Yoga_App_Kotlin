@@ -8,13 +8,14 @@
 
     tools:context=".login.SignInActivity">
 
+
+
     <ImageView
         android:id="@+id/image_view_yoga"
         android:layout_width="260dp"
-        android:layout_height="260dp"
+        android:layout_height="200dp"
         android:src="@drawable/yoga_pic4"
-        tools:layout_editor_absoluteX="75dp"
-        tools:layout_editor_absoluteY="0dp"
+        android:layout_marginTop="50dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -28,6 +29,7 @@
         android:fontFamily="@font/baloo"
         android:text="@string/text_sign_in"
         android:textSize="32sp"
+        android:layout_marginTop="30dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/image_view_yoga"/>
@@ -45,7 +47,7 @@
 
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="20dp"
             android:padding="10dp"
             >
 
@@ -89,12 +91,39 @@
         android:layout_width="250dp"
         android:layout_height="60dp"
         android:text="@string/hint_sign_in"
-        android:textSize="16sp"
+        android:textSize="20sp"
+        android:textStyle="bold"
         android:layout_marginTop="20dp"
         style="@style/Widget.Material3.Button.ElevatedButton"
         app:layout_constraintTop_toBottomOf="@+id/linear_layout_text_input"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/or_login_with"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Or Log In With"
+
+        app:layout_constraintTop_toBottomOf="@id/button_sign_in"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="50dp"/>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_sign_in_with_google"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:text="Google"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/google"
+        style="@style/Widget.Material3.Button.ElevatedButton"
+        app:layout_constraintTop_toBottomOf="@+id/or_login_with"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
 
 
 
@@ -123,8 +152,9 @@
             android:id="@+id/text_view_sign_up"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="SIGN UP"
+            android:text="Sign Up"
             android:textSize="18sp"
+            android:textColor="#742DF4"
             android:textStyle="bold"
             android:layout_marginTop="15dp"
             app:layout_constraintStart_toEndOf="@id/text_view_create_account"

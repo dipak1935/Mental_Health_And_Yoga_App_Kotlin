@@ -19,7 +19,7 @@ class SplashActivity : AppCompatActivity() {
 
             startActivity(Intent(this, SignInWelcomeActivity::class.java))
             finish()
-        },6000)
+        },3500)
 
     }
 }

@@ -15,4 +15,6 @@
     <string name="text_sign_up">Sign Up to Swastika</string>
     <string name="hint_name">Name</string>
     <string name="hint_mobile_number">Mobile Number</string>
+    
+    <string name="default_web_client_id">1046725423893-tmf17vg6oelr54etdgq5co07436djuq5.apps.googleusercontent.com</string>
 </resources>

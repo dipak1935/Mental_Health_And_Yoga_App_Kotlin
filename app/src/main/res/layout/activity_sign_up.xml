@@ -13,6 +13,7 @@
         android:id="@+id/image_view_yoga"
         android:layout_width="250dp"
         android:layout_height="250dp"
+        android:layout_marginTop="40dp"
         android:src="@drawable/yoga_pic3"
          />
 

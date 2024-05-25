@@ -9,9 +9,9 @@
 
     <ImageView
         android:id="@+id/image_view_yoga"
-        android:layout_width="1000dp"
-        android:layout_height="500dp"
-        app:srcCompat="@drawable/yoga_pic_7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/yoga_welcome_screen"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
@@ -24,10 +24,10 @@
         android:text="Welcome to Swastika"
         android:textSize="32sp"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginBottom="30dp"
+        android:layout_marginBottom="10dp"
         app:layout_constraintHorizontal_bias="0.584"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toBottomOf="@id/image_view_yoga"
+        app:layout_constraintTop_toBottomOf="@id/image_view_yoga"
         tools:layout_editor_absoluteY="449dp" />
 
 
@@ -41,7 +41,7 @@
         android:textStyle="bold"
         android:textSize="16sp"
         android:layout_margin="15dp"
-        app:layout_constraintTop_toBottomOf="@id/image_view_yoga"/>
+        app:layout_constraintBottom_toTopOf="@id/button_sign_in"/>
 
 
     <com.google.android.material.button.MaterialButton
@@ -52,8 +52,11 @@
         android:text="Sign In to Continue"
         android:textStyle="bold"
         android:textSize="16sp"
-        android:layout_margin="15dp"
-        app:layout_constraintTop_toBottomOf="@id/button_register"/>
+        android:padding="7dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"/>
 
 
 
