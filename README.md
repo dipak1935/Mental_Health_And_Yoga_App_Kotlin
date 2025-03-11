@@ -30,7 +30,7 @@ Architecture: Frontend-only application
 
 Clone the repository:
 
-git clone https://github.com/yourusername/mental-health-yoga-app.git
+gh repo clone dipak1935/Mental_Health_And_Yoga_App_Kotlin.git
 
 Open the project in Android Studio.
 
